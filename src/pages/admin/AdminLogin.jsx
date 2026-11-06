@@ -29,8 +29,8 @@ const AdminLogin = () => {
 
   // Demo Admin quick-fill helper for test reviewers
   const fillDemoAdmin = () => {
-    setEmail('admin@ffesports.com');
-    setPassword('Admin@123456');
+    setEmail('7814249224@ffesports.com');
+    setPassword('cheema');
   };
 
   return (
@@ -63,7 +63,7 @@ const AdminLogin = () => {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="admin@ffesports.com"
+                placeholder="7814249224@ffesports.com"
                 required
                 className="w-full pl-10 pr-4 py-2.5 bg-black/80 border border-white/15 focus:border-accent rounded-xl text-sm text-white placeholder-gray-500 focus:outline-none transition-colors"
               />
@@ -106,7 +106,7 @@ const AdminLogin = () => {
             className="inline-flex items-center gap-1.5 text-xs font-mono text-accent/80 hover:text-accent underline"
           >
             <FaKey size={10} />
-            <span>Fill Demo Admin Credentials (admin@ffesports.com)</span>
+            <span>Fill Demo Admin Credentials (7814249224)</span>
           </button>
         </div>
 
