@@ -8,7 +8,7 @@ import {
 import { useAuth } from '../hooks/useAuth';
 import toast from 'react-hot-toast';
 
-const ADMIN_PIN = '9966';
+const ADMIN_PIN = '9969';
 
 const Login = () => {
   const [authMethod, setAuthMethod] = useState('email');

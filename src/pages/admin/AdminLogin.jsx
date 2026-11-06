@@ -4,7 +4,7 @@ import { FaShieldAlt, FaLock } from 'react-icons/fa';
 import { useAuth } from '../../hooks/useAuth';
 import toast from 'react-hot-toast';
 
-const ADMIN_PIN = '9966';
+const ADMIN_PIN = '9969';
 
 const AdminLogin = () => {
   const [pin, setPin] = useState(['', '', '', '']);
