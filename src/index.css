@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #050505;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(255, 45, 45, 0.08) 0%, transparent 60%),
+    linear-gradient(rgba(255, 45, 45, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 45, 45, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 32px 32px, 32px 32px;
+  background-attachment: fixed;
+  color: #f3f4f6;
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Esports Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 45, 45, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff2d2d;
+}
+
+/* Esports Utility Classes */
+.font-heading {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.glow-text-red {
+  text-shadow: 0 0 10px rgba(255, 45, 45, 0.7), 0 0 20px rgba(255, 45, 45, 0.4);
+}
+
+.glow-text-gold {
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+.glow-text-orange {
+  text-shadow: 0 0 10px rgba(255, 106, 0, 0.7), 0 0 20px rgba(255, 106, 0, 0.4);
+}
+
+.gaming-card {
+  background: linear-gradient(180deg, #141414 0%, #0c0c0c 100%);
+  border: 1px solid rgba(255, 45, 45, 0.25);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gaming-card:hover {
+  border-color: rgba(255, 45, 45, 0.6);
+  box-shadow: 0 8px 30px rgba(255, 45, 45, 0.15), 0 0 15px rgba(255, 45, 45, 0.2);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff2d2d 0%, #ff6a00 100%);
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255, 45, 45, 0.4);
+}
+
+.btn-primary:hover:not(:disabled) {
+  box-shadow: 0 0 25px rgba(255, 45, 45, 0.7), 0 0 45px rgba(255, 106, 0, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  filter: grayscale(0.5);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 45, 45, 0.3);
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: rgba(255, 45, 45, 0.15);
+  border-color: #ff2d2d;
+  box-shadow: 0 0 15px rgba(255, 45, 45, 0.3);
+}
+
+.neon-border {
+  border: 1px solid rgba(255, 45, 45, 0.3);
+}
+
+.clip-corner {
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+}
+
+.clip-badge {
+  clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+}
+
+/* Animations */
+@keyframes pulseRed {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 45, 45, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 45, 45, 0.9);
+  }
+}
+
+.pulse-red {
+  animation: pulseRed 2s infinite ease-in-out;
+}
